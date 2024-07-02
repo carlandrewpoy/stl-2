@@ -1,6 +1,6 @@
 import { avatar } from "./avatar";
 import { pcso } from "./pcso";
-import { am } from "./am";
+import { signal } from "./signal";
 
 type Profile = {
   name: string;
@@ -11,7 +11,7 @@ type Profile = {
   // base64 encoded image
   avatar: string;
   pcso: string;
-  am: string;
+  signal: string;
 };
 
 export const profile: Profile = {
@@ -22,5 +22,5 @@ export const profile: Profile = {
   description: "Web Application Developer",
   avatar,
   pcso,
-  am
+  signal,
 };

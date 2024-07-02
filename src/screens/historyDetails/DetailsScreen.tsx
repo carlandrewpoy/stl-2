@@ -71,7 +71,7 @@ const DetailsScreen = ({ route }) => {
           <Text>{data?.bet_time}</Text>
         </View>
       </Card>
-      <Card containerStyle={{ maxHeight: 500 }}>
+      <Card containerStyle={{ maxHeight: 390 }}>
         <FlatList
           persistentScrollbar
           data={data?.combinations}
@@ -96,7 +96,7 @@ const DetailsScreen = ({ route }) => {
           position: "absolute",
           bottom: 15,
           flexDirection: "row",
-          width: 425,
+          width: "100%",
           justifyContent: "center",
         }}
       >

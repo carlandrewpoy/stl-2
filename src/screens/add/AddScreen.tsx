@@ -247,6 +247,11 @@ const AddScreen = () => {
             borderRadius: 50,
           }}
           onPress={handleSubmit}
+          // onPress={() => {
+          //   navigation.navigate("Details", {
+          //     code: 1,
+          //   });
+          // }}
           title={"Submit"}
         />
         {/* <Button onPress={sendSMS} title={"Submit"} /> */}
@@ -339,7 +344,7 @@ const AddScreen = () => {
         />
       </View>
 
-      <View>
+      <View style={{ marginBottom: 220 }}>
         <FlatList
           data={combinations}
           renderItem={({ item, index }) => (

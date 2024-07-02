@@ -9,12 +9,6 @@ import LoginScreen from "./screens/login/LoginScreen";
 import HitsScreen from "./screens/hits/HitsScreen";
 import DetailsScreen from "./screens/historyDetails/DetailsScreen";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { useClaimHits } from "./hooks/api/useClaimHits";
-import Modal from "react-native-modal";
-import QRCodeScanner from "react-native-qrcode-scanner";
-import { RNCamera } from "react-native-camera";
-import AntDesign from "react-native-vector-icons/AntDesign";
-import HitDetailsScreen from "./screens/hitDetails/HitDetailsScreen";
 
 const Navigation = () => {
   const Stack = createNativeStackNavigator();
@@ -39,7 +33,7 @@ const Navigation = () => {
             <Stack.Screen
               name="Hits"
               component={HitsScreen}
-              // options={{ headerShown: false }}
+            // options={{ headerShown: false }}
             />
             <Stack.Screen
               name="Details"

@@ -37,7 +37,7 @@ export const printNamecard = async (successRes: IAddReturn) => {
       130 /* height */
     );
     await SunmiV2Printer.printBitmap(
-      profile.am,
+      profile.signal,
       130 /* width */,
       130 /* height */
     );
@@ -121,7 +121,7 @@ export const printNamecard = async (successRes: IAddReturn) => {
     await SunmiV2Printer.setFontSize(23);
     await SunmiV2Printer.printOriginalText("Thank you for supporting STL!\n");
     await SunmiV2Printer.printOriginalText("No winning ticket, no claim\n");
-    await SunmiV2Printer.printOriginalText("3.1.6");
+    await SunmiV2Printer.printOriginalText("4.3.5");
 
     await SunmiV2Printer.printOriginalText("\n\n\n\n");
   } catch (e) {

@@ -18,7 +18,7 @@ const LoginScreen = () => {
       <View style={{ alignItems: "center", marginBottom: 30 }}>
         <Image
           style={{ width: 190, height: 190, marginBottom: 10 }}
-          source={require("../../images/sunny.png")}
+          source={require("../../images/calculator.png")}
         />
         <Text style={{ fontSize: 28, fontWeight: "700", color: "#264653" }}>
           SIGN IN
